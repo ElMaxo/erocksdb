@@ -59,8 +59,8 @@ case "$1" in
         if [ ! -d rocksdb ]; then
             ROCKSDBURL="https://github.com/facebook/rocksdb/archive/v$ROCKSDB_VSN.tar.gz"
             ROCKSDBTARGZ="rocksdb-$ROCKSDB_VSN.tar.gz"
-            echo Downloading $ROCKSDBURL...
-            curl -L -o $ROCKSDBTARGZ $ROCKSDBURL
+            #echo Downloading $ROCKSDBURL...
+            #curl -L -o $ROCKSDBTARGZ $ROCKSDBURL
             tar -xzf $ROCKSDBTARGZ
             mv rocksdb-$ROCKSDB_VSN rocksdb
         fi
